@@ -31,11 +31,14 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App" id="wrapper">
-                <div id="quote-box">
-                    <QuoteBox quote={this.state.quote.quote} author={this.state.quote.author}/>
-                    <a id="new-quote" onClick={this.getQuote}>New quote</a>
+            <div className="center">
+                <div className="App" id="wrapper">
+                    <div id="quote-box">
+                        <QuoteBox quote={this.state.quote.quote} author={this.state.quote.author}/>
+                        <a id="new-quote" onClick={this.getQuote}>New quote</a>
+                    </div>
                 </div>
+
             </div>
         )
     }
