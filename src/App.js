@@ -12,6 +12,7 @@ class App extends Component {
             quote: {}
         }
         this.getQuote = this.getQuote.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     getQuote = async () => {
@@ -25,6 +26,11 @@ class App extends Component {
         )
     }
 
+    handleClick = async (e) => {
+        e.preventDefault();
+        this.getQuote();
+    }
+
     componentDidMount() {
         this.getQuote();
     }
@@ -35,7 +41,7 @@ class App extends Component {
                 <div className="App" id="wrapper">
                     <div id="quote-box">
                         <QuoteBox quote={this.state.quote.quote} author={this.state.quote.author}/>
-                        <a id="new-quote" onClick={this.getQuote}>New quote</a>
+                        <a id="new-quote" href="/" onClick={this.handleClick} target="_blank">New quote</a>
                     </div>
                 </div>    
             </div>
