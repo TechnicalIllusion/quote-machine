@@ -37,8 +37,7 @@ class App extends Component {
                         <QuoteBox quote={this.state.quote.quote} author={this.state.quote.author}/>
                         <a id="new-quote" onClick={this.getQuote}>New quote</a>
                     </div>
-                </div>
-
+                </div>    
             </div>
         )
     }

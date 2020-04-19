@@ -8,8 +8,8 @@ export const QuoteBox = (props) => {
         <p id="text"><i className="fa fa-quote-left"></i>{props.quote}</p>
         <p id="author">- {props.author}</p>
         <div id="social-buttons">
-          <a href={twitterLink} className="button"><i className="fa fa-twitter"></i></a>
-          <a href={tumblr} className="button"><i className="fa fa-tumblr"></i></a>
+          <a href={twitterLink} className="button" id="tweet-quote"><i className="fa fa-twitter"></i></a>
+          <a href={tumblr} className="button" id=""><i className="fa fa-tumblr"></i></a>
         </div>
       </div>
   )
