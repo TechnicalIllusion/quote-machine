@@ -34,7 +34,7 @@ class App extends Component {
             <div className="App" id="wrapper">
                 <div id="quote-box">
                     <QuoteBox quote={this.state.quote.quote} author={this.state.quote.author}/>
-                    <a id="new-quote" onClick={this.getQuote}>New quote</a>
+                    <a id="new-quote" onClick={this.getQuote}>New quote1</a>
                 </div>
             </div>
         )
