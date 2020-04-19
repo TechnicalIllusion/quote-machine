@@ -67,3 +67,9 @@ a {
   color: var(--background-color);
   font-size: 12px;
 }
+
+@media only screen and (max-width: 650px) {
+  #wrapper {
+    width: 250px;
+  }
+}
