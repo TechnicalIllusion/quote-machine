@@ -7,12 +7,9 @@ class App extends Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             quote: {}
         }
-        this.getQuote = this.getQuote.bind(this);
-        this.handleClick = this.handleClick.bind(this);
     }
 
     getQuote = async () => {
