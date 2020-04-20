@@ -25,7 +25,7 @@ class App extends Component {
 
     handleClick = async (e) => {
         e.preventDefault();
-        this.getQuote();
+        await this.getQuote();
     }
 
     componentDidMount() {
